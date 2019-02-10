@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
+ 
 void rotate(int n, int ch) {
 
   // lowercase
