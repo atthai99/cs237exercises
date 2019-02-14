@@ -7,6 +7,7 @@
 
 void putBase(int b, int n) {
   if (n >= b) putBase(b,n/b);
+
   int nextChar = n%b + '0';
   
   //account for gap between '9' and 'A'
