@@ -3,9 +3,13 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+<<<<<<< HEAD
 
 #define ABC_SIZE 26
 
+=======
+ 
+>>>>>>> 22a5e76cf26ba10a3d230beb26adfa3915b269f9
 void rotate(int n, int ch) {
 
   // for backwards rotation
