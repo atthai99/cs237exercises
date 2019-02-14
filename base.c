@@ -19,7 +19,7 @@ void putBase(int b, int n) {
 }
 
 int main(int argc, char **argv) {
-  assert(argc == 2);
+  
   int b = atoi(argv[1]);
   int n;
   while (1 == fscanf(stdin, "%d", &n)) {

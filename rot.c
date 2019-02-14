@@ -25,7 +25,7 @@ void rotate(int n, int ch) {
 }
 
 int main(int argc, char **argv) {
-  assert(argc == 2);
+  
   int n = atoi(argv[1]);
   int current;
   while (EOF != (current = fgetc(stdin))) {
