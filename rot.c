@@ -4,16 +4,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define ABC_SIZE 26
+
 void rotate(int n, int ch) {
 
+  // for backwards rotation
+  if (n < 0) {
+    n = (n + ABC_SIZE) % ABC_SIZE; 
+  }
+    
   // lowercase
   if (ch >= 'a' && ch <= 'z') {
-    ch = ((ch - 'a' + n) % 26) + 'a';
+    ch = ((ch - 'a' + n) % ABC_SIZE) + 'a';
   }
 
   // uppercase
   else if (ch >= 'A' && ch <= 'Z') {
-    ch = ((ch - 'A' + n) % 26) + 'A';
+    ch = ((ch - 'A' + n) % ABC_SIZE) + 'A';
   }
 
   printf("%c", ch);
